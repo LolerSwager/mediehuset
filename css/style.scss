@@ -33,3 +33,22 @@ $LT-font : #171717;
     padding: 0;
     box-sizing: border-box;
 }  
+
+.addcards{
+    background-color: $DT-background;
+    div{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        color: $DT-font;
+        margin: 1rem 0;
+        input,textarea{
+            background-color: $DT-wrapper;
+            border-radius: 10px;
+            height: 35px;
+            border: none;
+        }
+        textarea{
+            height: 150px;
+        }
+    }
+}

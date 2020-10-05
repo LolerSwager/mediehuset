@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.addcards {
+  background-color: #424242;
+}
+
+.addcards div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  color: #E6E6E6;
+  margin: 1rem 0;
+}
+
+.addcards div input, .addcards div textarea {
+  background-color: #252525;
+  border-radius: 10px;
+  height: 35px;
+  border: none;
+}
+
+.addcards div textarea {
+  height: 150px;
+}

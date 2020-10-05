@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css');
 //  Webudvikler
 $WUC1: #D64643;
 $WUC2: #DD5050;
@@ -33,3 +34,77 @@ $LT-font : #171717;
     padding: 0;
     box-sizing: border-box;
 }  
+
+
+
+main{
+    background: $DT-background;
+    font-family: open sans;
+    min-height: 100vh;
+    .search{
+        display: inline-block;
+        background-color: $DT-wrapper;
+        color: $DT-font;
+        height: 35px;
+        input{
+            border: none;
+            background-color: $DT-wrapper;
+            color: $DT-font;
+            height: 35px;
+            padding: 5px;
+        }
+        i{
+            display: inline-block;
+            height: 100%;
+            padding: 5px;
+
+        }
+    }
+    section{
+        article{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+            .cards{
+                width: 300px;
+                figure{
+                    background: $DT-wrapper;
+                    color: $DT-font;
+                    img{
+                        width: 100%;
+                    }
+                    h3{
+                        margin: 0 1em;
+                    }
+                    figcaption{
+                        position: relative;
+                        width: 100%;
+                        height: 30px;
+                        p:first-child{
+                            position: absolute;
+                            left: 1em;
+                        }
+                        p{
+                            position: absolute;
+                            right: 1em;
+                        }
+                    }
+                }
+                .tags{
+                    display: flex;
+                    .tag{
+                        display: flex;
+                        background: red;
+                        height: 30px;
+                        padding: 0 1em;
+                        margin: 5px 5px 5px 0;
+                        border-radius: 15px;
+                        align-items: center;
+                        gap: 0.5em;
+                        color: $DT-font;
+                    }
+                }
+            }
+        }
+    }
+}

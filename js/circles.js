@@ -31,11 +31,11 @@ balls.forEach((el, i, ra) => {
       { transform: `translate(${to.x}rem, ${to.y}rem)` }
     ],
     {
-      duration: 20000, // random duration
-      direction: "alternate",
+      duration: 20000, // animation duration
+      direction: "alternate", //animation direction
       fill: "both",
       iterations: Infinity,
-      easing: "ease-in-out"
+      easing: "linear"
     }
   );
 });

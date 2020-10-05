@@ -9,3 +9,39 @@
 html {
   background-color: #424242;
 }
+
+.index-main {
+  width: 100%;
+}
+
+.education-article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+  margin: 10%;
+  height: 800px;
+  background-color: rgba(37, 37, 37, 0.8);
+}
+
+.education-text {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+}
+
+.education-media {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background-color: burlywood;
+}
+
+.footer {
+  height: 400px;
+  width: 100%;
+  background-color: #252525;
+}

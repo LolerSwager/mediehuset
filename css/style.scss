@@ -37,3 +37,50 @@ $LT-font : #171717;
 html {
     background-color: $DT-background;
 }
+
+
+//  MAIN   ------------------------------------------------------
+
+.index-main {
+//  position
+    width: 100%;
+}
+
+
+.education-article {
+//  position
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 10%;
+    height: 800px;
+    
+//  style
+    background-color: rgba($DT-wrapper, 0.8);
+}
+
+.education-text {
+    //  position
+        display: grid;
+        width: 100%;
+        height: 100%;
+    //  style
+        background-color: gray;
+    }
+
+    .education-media {
+    //  position
+        display: grid;
+        width: 100%;
+        height: 100%;
+    //  style 
+        background-color:burlywood ;
+    }
+//  FOOTER ------------------------------------------------------
+
+.footer {
+//  position
+    height: 400px;
+    width: 100%;
+//  style
+    background-color: $DT-wrapper;
+}

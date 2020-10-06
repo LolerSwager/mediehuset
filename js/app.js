@@ -30,18 +30,15 @@ for (element of cardArr){
             </figcaption>
         </figure>
         <div class="tags">`;
-            
+
         element.tags.map(tagitem => {
             let tagName = tagArr.find(o => o.name === tagitem).name;
-            let tagI = tagArr.find(o => o.name === tagitem).icon;
+            let tagIcon = tagArr.find(o => o.name === tagitem).icon;
             let tagColor = tagArr.find(o => o.name === tagitem).color;
-            accHtml +=`<div class="tag" style="background:${tagColor};"><i class="${tagI}"></i>${tagName}</div>`;
-            
+            accHtml +=`<div class="tag" style="background:${tagColor};"><i class="${tagIcon}"></i>${tagName}</div>`;
         });
+
         accHtml += `</div>
         </div>`;
 }
 document.getElementById('post').innerHTML = accHtml;
-
-
-

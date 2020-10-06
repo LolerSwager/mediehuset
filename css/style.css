@@ -40,10 +40,11 @@ main section article {
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 1rem;
+  margin: 1rem;
 }
 
 main section article .cards {
-  width: 300px;
+  width: 100%;
 }
 
 main section article .cards figure {
@@ -79,6 +80,7 @@ main section article .cards .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 main section article .cards .tags .tag {

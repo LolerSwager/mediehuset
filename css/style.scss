@@ -79,8 +79,24 @@ html {
 
 .footer {
 //  position
+    display: grid;
+    grid-template-columns: 40% 1% 30% auto;
     height: 400px;
     width: 100%;
 //  style
     background-color: $DT-wrapper;
+
+    .footer-section {
+        display: grid;
+        justify-content: center;
+    //  position
+        width: 100%;
+        height: 100%;
+    //  style 
+        background-color: burlywood;
+    }
+
+    img {
+        margin-top: 10%;
+    }
 }

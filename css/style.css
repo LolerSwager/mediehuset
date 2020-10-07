@@ -31,6 +31,90 @@ html {
   background-color: #424242;
 }
 
+#navbar {
+  top: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% auto auto;
+      grid-template-columns: 10% auto auto;
+  background-color: #252525;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+}
+
+#navbar .navlogo {
+  height: 100px;
+}
+
+#navbar .navlogo img {
+  height: 80%;
+  margin: 10px;
+  margin-left: 45px;
+}
+
+#navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#navbar li {
+  margin-left: 50px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: #E6E6E6;
+  font-size: 24px;
+}
+
+#navbar .nav-login {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+#navbar img {
+  margin-right: 20px;
+  height: 50px;
+}
+
+#navbar #wu-link:hover {
+  color: #DD5050;
+}
+
+#navbar #mg-link:hover {
+  color: #AF61A9;
+}
+
+#navbar #dm-link:hover {
+  color: #88A73F;
+}
+
+#navbar #gt-link:hover {
+  color: #567EBF;
+}
+
 .index-main {
   width: 100%;
 }
@@ -127,12 +211,48 @@ html {
   text-align: center;
 }
 
+.footer li a {
+  text-decoration: none;
+  color: #E6E6E6;
+}
+
 .footer .footer-divider {
   display: -ms-grid;
   display: grid;
   height: 350px;
   width: 3px;
   margin: auto;
-  border-radius: 25px;
+  border-radius: 50px;
   background-color: #E6E6E6;
+}
+
+.footer-middle {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 90%;
+}
+
+.footer-middle h2 {
+  font-size: 64px;
+  margin-top: 15%;
+}
+
+.footer-middle h2 span {
+  font-weight: lighter;
+}
+
+.footer-middle section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.footer-middle section a {
+  text-decoration: none;
+  color: #E6E6E6;
+  width: 150px;
+  font-size: 16px;
 }

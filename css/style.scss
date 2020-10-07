@@ -65,6 +65,78 @@ html {
     background-color: $DT-background;
 }
 
+//  NAV    ------------------------------------------------------
+
+#navbar {
+    top: 0;
+    display: grid;
+    grid-template-columns: 10% auto auto;
+    background-color:$DT-wrapper;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    transition: top 0.3s;
+  
+    .navlogo {
+        height: 100px;
+        img {
+            height: 80%;
+            margin: 10px;
+            margin-left: 45px;
+        }
+    }
+
+    ul {
+        display: flex;
+        height: 100px;
+        flex-direction: row;
+        justify-content: flex-start;
+        list-style: none;
+        align-items: center;
+    }
+
+    li {
+        margin-left: 50px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $DT-font;
+        font-size: $anchor-size;
+    }
+
+
+    .nav-login {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    img {
+        margin-right: 20px;
+        height: 50px;
+    }
+
+
+// Hover Colors for Nav Links 
+    #wu-link:hover {
+        color: $WUC2;
+    }
+
+    #mg-link:hover {
+        color: $MGC1;
+    }
+
+    #dm-link:hover {
+        color: $DMC3;  
+    }
+
+    #gt-link:hover {
+        color: $GTC3;
+    }
+
+}
+
 
 //  MAIN   ------------------------------------------------------
 
@@ -171,9 +243,14 @@ html {
 
     li {
         list-style: none;
-        color: $LT-wrapper;
+        color: $DT-font;
         font-size: $p-size;
         text-align: center;
+
+        a {
+            text-decoration: none;
+            color: $DT-font;
+        }
     }
 
     .footer-divider {
@@ -181,8 +258,34 @@ html {
         height: 350px;
         width: 3px;
         margin: auto;
-        border-radius: 25px;
-        background-color: $LT-wrapper;
+        border-radius: 50px;
+        background-color: $DT-font;
+    }
 
+}
+
+.footer-middle{
+    display: grid;
+    justify-items: center;
+    //  position
+        width: 100%;
+        height: 90%;
+    h2 {
+        font-size: 64px;
+        margin-top: 15%;
+        span{
+            font-weight: lighter;
+        }
+    }
+    section {
+        display: grid;
+        grid-template-columns: auto auto;
+        
+        a {
+            text-decoration: none;
+            color: $DT-font;
+            width: 150px;
+            font-size: $p-size;
+        }
     }
 }

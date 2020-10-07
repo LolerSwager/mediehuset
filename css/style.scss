@@ -27,12 +27,39 @@ $DT-font: #E6E6E6;
 $LT-background: #F3FEFE;
 $LT-wrapper: #E6E6E6;
 $LT-font : #171717;
+//Font sizes
+$H1-size: 32px;
+$H2-size: 28px;
+$H3-size: 24px;
+$p-size: 16px;
+$anchor-size: 24px;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }  
+
+p, h1, h2, h3 {
+    color: $DT-font;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 16px;
+}
 
 html {
     background-color: $DT-background;
@@ -53,18 +80,33 @@ html {
     grid-template-columns: 60% 40%;
     margin: 10%;
     height: 800px;
-    
 //  style
     background-color: rgba($DT-wrapper, 0.8);
 }
 
 .education-text {
     //  position
-        display: grid;
         width: 100%;
         height: 100%;
+        margin-top: 10%;
+        
     //  style
-        background-color: gray;
+        background-color: transparent;
+
+
+        h2 {
+        //  position
+            margin-top: 10%;
+            margin-left: 10%;
+            margin-bottom: 10%;
+        }
+
+        p {
+        //  position
+            margin-top: 3%;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
     }
 
     .education-media {
@@ -73,7 +115,34 @@ html {
         width: 100%;
         height: 100%;
     //  style 
-        background-color:burlywood ;
+        background-color:transparent;
+    }
+
+    .image-box-1, .image-box-2, .image-box-3, .image-box-4 {
+    //  position
+        width: 400px;
+        height: 400px;
+        border-radius: 100%; 
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+    //  style       
+    }
+
+    .image-box-1 {
+        background-image: url(/img/bliv_webudvikler_aalborg_uddannelse.jpg); //webudvikler billed
+    }
+
+    .image-box-2 {
+        background-image: url(/img/grafisk_design_uddannelse_skole_aalborg.jpg); //mediegrafiker billed
+    }
+
+    .image-box-3 {
+        background-image: url(/img/video_web_film_premiere.jpg); //digital media billed
+    }
+
+    .image-box-4 {
+        background-image: url(/img/_mg_9043-650.jpg); //grafisk tekniker billed 
     }
 //  FOOTER ------------------------------------------------------
 
@@ -88,15 +157,32 @@ html {
 
     .footer-section {
         display: grid;
-        justify-content: center;
+        justify-items: center;
     //  position
         width: 100%;
         height: 100%;
     //  style 
-        background-color: burlywood;
+        background-color: transparent;
     }
 
     img {
         margin-top: 10%;
+    }
+
+    li {
+        list-style: none;
+        color: $LT-wrapper;
+        font-size: $p-size;
+        text-align: center;
+    }
+
+    .footer-divider {
+        display: grid;
+        height: 350px;
+        width: 3px;
+        margin: auto;
+        border-radius: 25px;
+        background-color: $LT-wrapper;
+
     }
 }

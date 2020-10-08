@@ -111,7 +111,21 @@ html {
         grid-template-columns: auto auto;
         justify-content: center;
         margin-top: 30px;
+
+        img {
+            cursor: pointer;
+        }
+    
+        a {
+            margin-top: 10%;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
+
+
     img {
         margin-right: 20px;
         height: 50px;
@@ -179,7 +193,19 @@ html {
             margin-left: 10%;
             margin-right: 10%;
         }
+
+        button {
+            color: $DT-font;
+            background-color: transparent;
+            border: 1px solid $DT-font;
+            padding: 8px;
+            cursor: pointer;
+            margin-top: 10%;
+            margin-left: 75%;
+            font-size: $p-size;
+        }
     }
+
 
     .education-media {
     //  position
@@ -199,6 +225,28 @@ html {
         background-position: center;
         background-size: cover;
     //  style       
+    }
+
+    // Button Hovers 
+
+    #wu-button:hover {
+        color: $WUC1;
+        border-color: $WUC1;
+    }
+
+    #mg-button:hover {
+        color: $MGC1;
+        border-color: $MGC1;
+    }
+
+    #dm-button:hover {
+        color: $DMC1;
+        border-color: $DMC1;
+    }
+
+    #gt-button:hover {
+        color: $GTC1;
+        border-color: $GTC1;
     }
 
     .image-box-1 {

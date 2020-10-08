@@ -1,4 +1,9 @@
 cardArr = [
+    {img: "featured.jpg", title: "Title", name: "navn", date: "dato", tags: ["db", "angular"]},
+    {img: "featured.jpg", title: "Title", name: "navn", date: "dato", tags: ["db", "angular"]},
+    {img: "featured.jpg", title: "Title", name: "navn", date: "dato", tags: ["db", "angular"]},
+    {img: "featured.jpg", title: "Title", name: "navn", date: "dato", tags: ["db", "angular"]},
+    {img: "featured.jpg", title: "Title", name: "navn", date: "dato", tags: ["db", "angular"]},
     {img: "featured.jpg", title: "Title", name: "navn", date: "dato", tags: ["db", "angular"]}
 ]
 console.log(cardArr);

@@ -340,7 +340,8 @@ html {
     }  
 }  
 
-main{
+.card-page{
+    margin: 10%;
     font-family: open sans;
     min-height: 100vh;
     .search{
@@ -366,8 +367,8 @@ main{
         article{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1rem;
-            margin: 1rem;
+            grid-gap: 3rem;
+            margin: 2rem 0;
             .cards{
                 width: 100%;
                 figure{
@@ -413,43 +414,45 @@ main{
     }
 }
 
-.addcards{
-    margin: 10rem auto;
-    width: 900px;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 500px 300px;
-    grid-gap: 2rem;
-    padding: 2rem;
-    background-color: $DT-background;
-    .top-left,.top-right,.bottom-left,.bottom-right{
-        height: 200px;
-        div{
-            color: $DT-font;
-            label{
-                display: block;
-                margin: 0 0 5px 0;
-                font-size: 1.2rem;
-            }
-            input,textarea{
-                background-color: $DT-wrapper;
-                border-radius: 10px;
-                height: 45px;
-                width: 100%;
-                border: none;
-                margin: 0 0 1.5rem 0;
+.addcard-page{
+    .addcards{
+        margin: 10rem auto;
+        width: 900px;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 500px 300px;
+        grid-gap: 2rem;
+        padding: 2rem;
+        background-color: $DT-background;
+        .top-left,.top-right,.bottom-left,.bottom-right{
+            height: 200px;
+            div{
                 color: $DT-font;
-            }
-            textarea{
-                height: 170px;
-            }
-            #file{
-                width: 0.1px;
-                height: 0.1px;
-                opacity: 0;
-                overflow: hidden;
-                position: absolute;
-                z-index: -1;
+                label{
+                    display: block;
+                    margin: 0 0 5px 0;
+                    font-size: 1.2rem;
+                }
+                input,textarea{
+                    background-color: $DT-wrapper;
+                    border-radius: 10px;
+                    height: 45px;
+                    width: 100%;
+                    border: none;
+                    margin: 0 0 1.5rem 0;
+                    color: $DT-font;
+                }
+                textarea{
+                    height: 170px;
+                }
+                #file{
+                    width: 0.1px;
+                    height: 0.1px;
+                    opacity: 0;
+                    overflow: hidden;
+                    position: absolute;
+                    z-index: -1;
+                }
             }
         }
     }

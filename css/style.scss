@@ -10,7 +10,7 @@ $MGC1: #AF61A9;
 $MGC2: #A43380;
 $MGC3: #922F75;
 $MGC4: #852C70;
-//   Digital media
+//  Digital media
 $DMC1: #808736;
 $DMC2: #8C993D;
 $DMC3: #88A73F;
@@ -24,7 +24,7 @@ $GTC4: #4C71A6;
 $DT-background: #424242;
 $DT-wrapper: #252525;
 $DT-font: #E6E6E6;
-//   Light Theme
+//  Light Theme
 $LT-background: #F3FEFE;
 $LT-wrapper: #E6E6E6;
 $LT-font : #171717;
@@ -35,6 +35,7 @@ $H3-size: 24px;
 $p-size: 16px;
 $anchor-size: 24px;
 
+//  Alle Ting
 *{
     margin: 0;
     padding: 0;
@@ -340,7 +341,6 @@ html {
 }  
 
 main{
-    background: $DT-background;
     font-family: open sans;
     min-height: 100vh;
     .search{
@@ -411,4 +411,52 @@ main{
             }
         }
     }
+}
+
+.addcards{
+    margin: 10rem auto;
+    width: 900px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 500px 300px;
+    grid-gap: 2rem;
+    padding: 2rem;
+    background-color: $DT-background;
+    .top-left,.top-right,.bottom-left,.bottom-right{
+        height: 200px;
+        div{
+            color: $DT-font;
+            label{
+                display: block;
+                margin: 0 0 5px 0;
+                font-size: 1.2rem;
+            }
+            input,textarea{
+                background-color: $DT-wrapper;
+                border-radius: 10px;
+                height: 45px;
+                width: 100%;
+                border: none;
+                margin: 0 0 1.5rem 0;
+                color: $DT-font;
+            }
+            textarea{
+                height: 170px;
+            }
+            #file{
+                width: 0.1px;
+                height: 0.1px;
+                opacity: 0;
+                overflow: hidden;
+                position: absolute;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+#output{
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
 }

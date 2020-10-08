@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="addcards">
+            <div class="top-left">
+                <div>
+                    <label for="title">Title</label>
+                    <input type="text" name="title">
+                </div>
+                <div>
+                    <label for="pl">Projekt link</label>
+                    <input type="text" name="pl">
+                </div>
+            </div>
+            <div class="top-right">
+                <div>
+                    <div id="preview">
+                        <img src="img/M.svg" id="output" alt="">
+                    </div>
+                    <input type="file" name="file" id="file" onchange="loadFile(event)">
+                    <label for="file"><i class="fas fa-upload"></i> Vælg cover billed</label>
+                </div>
+            </div>
+            <div class="bottom-left">
+                <div>
+                    <label for="des">Beskrivelse</label>
+                    <textarea name="des"></textarea>
+                </div>
+            </div>
+            <div class="bottom-right">
+                <div>
+                    <label for="tag">Tags</label>
+                    <input type="text" name="tag">
+                    <div class="tags">
+                        <div>tag</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/preview.js"></script>
+</body>
+</html>

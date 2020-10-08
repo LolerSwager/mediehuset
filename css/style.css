@@ -7,25 +7,58 @@
 }
 
 .addcards {
+  width: 900px;
+  height: 500px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 500px 300px;
+      grid-template-columns: 500px 300px;
+  grid-gap: 2rem;
+  padding: 2rem;
   background-color: #424242;
 }
 
-.addcards div {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  color: #E6E6E6;
-  margin: 1rem 0;
+.addcards .top-left, .addcards .top-right, .addcards .bottom-left, .addcards .bottom-right {
+  height: 200px;
 }
 
-.addcards div input, .addcards div textarea {
+.addcards .top-left div, .addcards .top-right div, .addcards .bottom-left div, .addcards .bottom-right div {
+  color: #E6E6E6;
+}
+
+.addcards .top-left div label, .addcards .top-right div label, .addcards .bottom-left div label, .addcards .bottom-right div label {
+  display: block;
+  margin: 0 0 5px 0;
+  font-size: 1.2rem;
+}
+
+.addcards .top-left div input, .addcards .top-left div textarea, .addcards .top-right div input, .addcards .top-right div textarea, .addcards .bottom-left div input, .addcards .bottom-left div textarea, .addcards .bottom-right div input, .addcards .bottom-right div textarea {
   background-color: #252525;
   border-radius: 10px;
-  height: 35px;
+  height: 45px;
+  width: 100%;
   border: none;
+  margin: 0 0 1.5rem 0;
+  color: #E6E6E6;
 }
 
-.addcards div textarea {
-  height: 150px;
+.addcards .top-left div textarea, .addcards .top-right div textarea, .addcards .bottom-left div textarea, .addcards .bottom-right div textarea {
+  height: 170px;
 }
+
+.addcards .top-left div #file, .addcards .top-right div #file, .addcards .bottom-left div #file, .addcards .bottom-right div #file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+
+#output {
+  width: 300px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */
